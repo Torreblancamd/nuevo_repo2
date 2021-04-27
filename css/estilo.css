@@ -1,0 +1,75 @@
+p {
+  color: green;
+  font-size: 80px; }
+
+aside .side-ad {
+  box-sizing: border-box;
+  border-width: 2px; }
+
+p:nth-child(1) {
+  font-size: 20px;
+  background-color: #cc0000; }
+
+p:nth-child(2) {
+  font-size: 20px;
+  background-color: #990000; }
+
+p:nth-child(3) {
+  font-size: 20px;
+  background-color: #660000; }
+
+p:nth-child(4) {
+  font-size: 20px;
+  background-color: #330000; }
+
+p:nth-child(5) {
+  font-size: 20px;
+  background-color: black; }
+
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
+
+.div-rojo {
+  background-color: "rojo"; }
+
+.div-azul {
+  background-color: "azul"; }
+
+.div-verde {
+  background-color: "verde"; }
+
+.div-amarillo {
+  background-color: "amarillo"; }
+
+.cuidado, .error, .error-critico {
+  color: black;
+  font-size: 40px;
+  background-color: red; }
+
+.error, .error-critico {
+  background-color: #990000; }
+
+.error-critico {
+  font-size: 80px;
+  color: white; }
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: red; }
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100px;
+  color: blue; }
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 200px;
+  color: green; }

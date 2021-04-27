@@ -1,0 +1,121 @@
+
+
+$animal: perro;
+
+p{
+    @if $animal == gato{
+
+        color:red;
+        font-size:40px;
+    }
+
+    @else if $animal == perro{
+
+        color: green;
+        font-size: 80px;
+
+    }
+
+    @else{
+        color:blue;
+        font-size: 60px;
+    }
+
+}
+
+
+$b: "border";
+$s: "side";
+
+
+
+a#{$s} .#{$s}-ad{
+
+    box-sizing: #{$b}-box ;
+    #{$b}-width: 2px;
+}
+
+
+@for $i from 1 to 6{
+
+    p:nth-child( #{$i}){
+        font-size:20px;
+        background-color: darken(red, $i * 10%);
+    }
+}
+
+
+
+
+$colores: "rojo" , "azul" , "verde", "amarillo";
+
+$redes: ( /*Declaramos nuestro mapa*/
+        twitter: #55acee,
+        facebook:  #3a5795,
+        send-mail: #C25E30
+); 
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+ }
+ 
+
+
+
+
+@each $color in $colores{
+
+    .div-#{$color}{
+        background-color: $color;
+    }
+}
+
+
+$colorMalo: red;
+
+.cuidado{
+
+    color: black;
+    font-size: 40px;
+    background-color: $colorMalo;
+
+}
+
+.error{
+    @extend .cuidado;
+    background-color: darken( $colorMalo, 20%) ;
+
+}
+
+.error-critico{
+    @extend .error;
+    font-size:80px;
+    color:white;
+}
+
+
+
+
+
+@mixin fuentes($colorTitulo , $tamaño){
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $tamaño;
+    color: $colorTitulo;
+}
+
+h1{
+    @include fuentes(red, 30px);
+
+}
+
+h2{
+   @include fuentes( blue, 100px);
+}
+
+h3{
+    @include fuentes( green , 200px);
+   
+}
